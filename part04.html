@@ -1,0 +1,11 @@
+// (button is clicked) browser->server: user input // (form is submitted)
+browser->server: Five HTTP requests // (form submit event) HTTP POST
+https://fullstack-exampleapp.herokuapp.com/new_note // server -> browser HTTP
+status code 302 (URL redirect) server is asking the browser to do a new GET
+request // browser reloads the notes page // reload causes HTTP GET for
+main.css, main.js and data.json // network tab shows data submitted with the
+form // form tag defines submitting the form is done as HTTP POST request to
+new_note // data is sent as body of POST-request // server can access the
+req.body field of the object req // server creates new note object adds it to
+array called notes // server does not save new notes, will disappear when server
+is restarted.
